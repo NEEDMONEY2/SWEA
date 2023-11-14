@@ -1,6 +1,6 @@
 
 T = int(input()) 
-# (좌 하 우 상) 움직임 순서
+# (우 하 좌 상) 움직임 순서
 dx = [0,1,0,-1]   
 dy = [1,0,-1,0]
 
@@ -23,7 +23,7 @@ for test_case in range(1,T+1):
             arr[i][j] = cnt # 한칸 이동한곳에 cnt(2) 대입
             cnt += 1
         else:
-            dr = (dr+1)%4   # (좌 하 우 상)순서를 순환하여 실행 
+            dr = (dr+1)%4   # (우 하 좌 상)순서를 순환하여 실행 
 
     print(f'#{test_case}')
     for lst in arr:
